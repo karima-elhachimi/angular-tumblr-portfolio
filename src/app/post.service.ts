@@ -20,7 +20,7 @@ export class PostService {
   constructor (private http: HttpClient ) { }
 
   getPhotos() {
-    return this.http.get(this.conn.url)
+    return this.http.get(this.conn.urlPostsPhoto)
       .map(response => {
         return (<PortfolioItem[]>response)['response']['posts'];
       });

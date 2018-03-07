@@ -1,24 +1,30 @@
 
-
+<section class="portfolio-container" layout-align="center">
 <ng-masonry-grid class="masonry" [useImagesLoaded]="true"
                  [useAnimation]="false"
                  [masonryOptions]="masonryOptions"
 
 >
+
   <!-- Masonry Grid Item -->
-  <ng-masonry-grid-item  class="masonry-item" id="{{'masonry-item-'+i}}" *ngFor="let item of portfolioItems; let i = index;"
+
+    <ng-masonry-grid-item  class="masonry-item" id="{{'masonry-item-'+i}}"
+                           *ngFor="let item of portfolioItems; let i = index;"
                         (click)="setSelectedItem(item)"
                         [class.gigante] = "selectedItem === item"
-
-
-  >
+    >
 
     <!-- Grid Content  -->
-    <img [src]="item.photos[0].original_size.url"    alt="" />
-    <p *ngIf="selectedItem === item" class="caption">Just testing</p>
-  </ng-masonry-grid-item>
-</ng-masonry-grid>
 
+      <img *ngFor="let photo of item.photos" [src]="photo.original_size.url"    alt="{{photo.caption}}" />
+
+      <p *ngIf="selectedItem === item" class="caption">{{item.caption }}</p>
+
+    </ng-masonry-grid-item>
+
+
+</ng-masonry-grid>
+</section>
 
 
 

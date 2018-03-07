@@ -26,7 +26,8 @@ export class PortfolioComponent implements OnInit, AfterContentInit {
 
   masonryOptions = {
     resize: true,
-    transitionDuration: 0
+    transitionDuration: 0,
+    isFitWidth: true
   };
 
 

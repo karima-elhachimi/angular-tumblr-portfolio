@@ -1,32 +1,31 @@
-.masonry {
-  text-align: center;
-  min-width: 80%;
-}
 
 .masonry-item {
   border: white solid 3px;
-  min-width: 40%;
+  min-width: 600px;
 
 
-}
-
-.variation {
-  min-width: 100%;
-}
-
-
-.gigante {
-  min-width: 100%;
-  z-index: 1000;
 }
 
 .caption {
   color: white;
-  font-size: 2rem;
+  font-size: 10px;
   background-color: dimgray;
-  display: block;
+
   position: absolute;
   top: 20%;
   left: 10%;
 
 }
+
+.masonry {
+  margin: 0;
+}
+
+.section {
+  margin: 0;
+}
+
+.img { float : right;}
+
+
+

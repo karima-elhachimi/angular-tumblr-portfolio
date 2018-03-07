@@ -6,7 +6,7 @@ import { RouterModule } from '@angular/router';
 import { NgMasonryGridModule } from 'ng-masonry-grid';
 
 import { PortfolioComponent } from './portfolio/portfolio.component';
-import {PostService} from './post.service';
+import { PostService } from './post.service';
 import { PortfolioItemComponent } from './portfolio-item/portfolio-item.component';
 import { ContactComponent } from './contact/contact.component';
 import { ArticlesComponent } from './articles/articles.component';
@@ -31,7 +31,10 @@ import { NavigationComponent } from './navigation/navigation.component';
     BrowserModule,
     HttpClientModule,
     NgMasonryGridModule,
-    RouterModule
+    RouterModule.forRoot([
+      {path: '', component: PortfolioComponent },
+      {path: 'contact', component: ContactComponent }
+    ])
   ],
   providers: [
     PostService
