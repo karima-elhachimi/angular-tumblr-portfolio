@@ -15,7 +15,7 @@ import 'rxjs/add/operator/toArray';
 @Injectable()
 export class PostService {
 
-  private conn: TumblrConnections;
+  private conn: TumblrConnections = new TumblrConnections();
 
   constructor (private http: HttpClient ) { }
 

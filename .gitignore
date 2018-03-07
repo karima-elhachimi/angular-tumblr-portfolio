@@ -33,7 +33,7 @@
 npm-debug.log
 testem.log
 /typings
-/src/tumblr-api-connections.ts
+src/app/tumblr-connections.ts
 
 # e2e
 /e2e/*.js
