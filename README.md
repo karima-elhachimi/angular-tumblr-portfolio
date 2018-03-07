@@ -1,7 +1,11 @@
-# Yannick
+# Yannick's portfolio website
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.6.
+A simple visual portfolio website that uses the Angular CLi as front end and the tumblr Api as a CMS. 
 
+
+## Want to use this for your own portfolio?
+In the src/app/post.service.ts file, edit out the 
+tumblr connection property to contain your own api keys and tumblr blog address. 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
